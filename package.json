@@ -1,0 +1,30 @@
+{
+  "name": "sample-module",
+  "version": "1.0.0",
+  "description": "PM2 Sample Module",
+  "main": "app.js",
+  "dependencies": {
+    "koa": "^2.3.0",
+    "pm2": "^2.5.0",
+    "pmx": "beta"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/keymetrics/pmx.git"
+  },
+  "config": {
+    "name": "A pm2-hook task",
+    "mode": "normal",
+    "token_name": "token",
+    "config_file": ".pm2-hook.config.js"
+  },
+  "apps": [
+    {
+      "merge_logs": true,
+      "max_memory_restart": "200M",
+      "script": "app.js"
+    }
+  ],
+  "author": "Keymetrics Inc.",
+  "license": "MIT"
+}
