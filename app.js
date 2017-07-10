@@ -44,7 +44,8 @@ pmx.initModule({
       process.exit(2);
     }
     
-    let _appName = conf.name;
+    // let _appName = conf.name;
+    let _appName = conf.target;
     let _mode = conf.mode; // "custom" mode passing functions
     let _tokenName = conf.token_name;  // used in "normal" mode
     let _tokenValue = conf.token_value;  // used in "normal" mode
