@@ -92,6 +92,8 @@ pmx.initModule({
           }
         });
       }
+      
+      ctx.response.status = 204;
     });
     
     server.listen(_port);
