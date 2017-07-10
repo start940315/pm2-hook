@@ -79,7 +79,7 @@ pmx.initModule({
     });
     
     server.listen(_port);
-    
+    console.log(`Webhook server listen on ${_port}`);
   });
   
 
