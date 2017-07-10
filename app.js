@@ -2,6 +2,7 @@
 const pmx = require('pmx');
 const pm2 = require("pm2");
 const Koa = require("koa");
+const koaBody = require('koa-body');
 
 pmx.initModule({
 
@@ -53,6 +54,8 @@ pmx.initModule({
     let _port = conf.port;
     
     let server = new Koa();
+  
+    server.use(koaBody());
     
     server.use(ctx => {
       let payload = ctx.request.body;

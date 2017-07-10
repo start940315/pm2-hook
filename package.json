@@ -1,10 +1,11 @@
 {
   "name": "pm2-web-hook",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "A hook module for pm2. Can be used with webhook and any other hooks",
   "main": "app.js",
   "dependencies": {
     "koa": "^2.3.0",
+    "koa-body": "^2.3.0",
     "pm2": "^2.5.0",
     "pmx": "beta"
   },
