@@ -88,7 +88,7 @@ pmx.initModule({
           if (!err && meta.rev) {
             console.log(`${_appName} is at latest version:${meta.rev.current_revision}`);
           } else {
-            console.log(`Pull ${_appName} failed`);
+            console.log(`Pull ${_appName} failed`, 1, err, 2, meta);
           }
         });
       }
