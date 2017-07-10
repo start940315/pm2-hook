@@ -58,7 +58,7 @@ pmx.initModule({
       
       switch (_mode) {
         case "custom":
-          doReload = require(_configFile)(payload);
+          doReload = require(_configFile)(payload, conf);
           break;
         case "normal":
         default:
@@ -71,13 +71,13 @@ pmx.initModule({
           if (!err && meta.rev) {
             console.log(`${_appName} is at latest version:${meta.rev.current_revision}`);
           } else {
-            console.log("pull failed");
+            console.log(`Pull ${_appName} failed`);
           }
         });
       }
-    })
+    });
     
-  })
+  });
   
 
   /**
