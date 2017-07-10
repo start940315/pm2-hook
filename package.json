@@ -1,6 +1,6 @@
 {
-  "name": "pm2-hook",
-  "version": "1.2.0",
+  "name": "pm2-web-hook",
+  "version": "1.3.0",
   "description": "A hook module for pm2. Can be used with webhook and any other hooks",
   "main": "app.js",
   "dependencies": {
@@ -16,7 +16,7 @@
     "name": "The app name used by pm2",
     "mode": "normal",
     "token_name": "token",
-    "config_file": ".pm2-hook.config.js",
+    "config_file": ".pm2-web-hook.config.js",
     "port": 8088
   },
   "apps": [
