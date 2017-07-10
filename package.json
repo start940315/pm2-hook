@@ -1,6 +1,6 @@
 {
   "name": "pm2-web-hook",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "A hook module for pm2. Can be used with webhook and any other hooks",
   "main": "app.js",
   "dependencies": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/keymetrics/pmx.git"
+    "url": "git@github.com:start940315/pm2-hook.git"
   },
   "config": {
     "name": "pm2-web-hook",

@@ -52,6 +52,18 @@ pmx.initModule({
     let _tokenValue = conf.token_value;  // used in "normal" mode
     let _configFile = conf.config_file;  // used in "custom" mode
     let _port = conf.port;
+    let isConfigValid = true;
+    if (!_appName) {
+      console.log("You need to specify the target app name");
+      isConfigValid = false;
+    }
+    if (_mode === "normal" && _tokenValue === undefined) {
+      console.log("You need to specify token value");
+      isConfigValid = false;
+    }
+    if (!isConfigValid) {
+      process.exit(3);
+    }
     
     let server = new Koa();
   
