@@ -49,6 +49,7 @@ pmx.initModule({
     let _tokenName = conf.token_name;  // used in "normal" mode
     let _tokenValue = conf.token_value;  // used in "normal" mode
     let _configFile = conf.config_file;  // used in "custom" mode
+    let _port = conf.port;
     
     let server = new Koa();
     
@@ -76,6 +77,8 @@ pmx.initModule({
         });
       }
     });
+    
+    server.listen(_port);
     
   });
   
